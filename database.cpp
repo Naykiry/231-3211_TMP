@@ -1,4 +1,4 @@
-#include "Database.h"
+#include "database.h"
 
 DataBase* DataBase::p_instance = nullptr;
 DatabaseDestroyer DataBase::destroyer;

@@ -4,10 +4,7 @@
 #include <QObject>
 #include <QTcpServer>
 #include <QTcpSocket>
-
-#include <QtNetwork>
-#include <QByteArray>
-#include <QDebug>
+#include <QList>
 
 class TcpServer : public QObject
 {
@@ -15,13 +12,15 @@ class TcpServer : public QObject
 public:
     explicit TcpServer(QObject *parent = nullptr);
     ~TcpServer();
-public slots:
+
+private slots:
     void slotNewConnection();
-    void slotClientDisconnected();
     void slotServerRead();
+    void slotClientDisconnected();
+
 private:
-    QTcpServer * mTcpServer;
-    QTcpSocket * mTcpSocket;
-    //int server_status;
+    QTcpServer *mTcpServer;
+    QList<QTcpSocket*> mTcpSockets;
 };
-#endif // MYTCPSERVER_H
+
+#endif

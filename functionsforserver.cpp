@@ -1,7 +1,7 @@
 #include "functionsforserver.h"
 #include "database.h"
 
-QByteArray parsing (QString data_from_client)
+QByteArray parsing(QString data_from_client)
 {
     data_from_client = data_from_client.trimmed();
 
@@ -19,7 +19,6 @@ QByteArray parsing (QString data_from_client)
     else
         return "Error\n";
 }
-
 
 QByteArray auth(QString log, QString pass)
 {
@@ -40,7 +39,6 @@ QByteArray auth(QString log, QString pass)
         return "Error: Authentication failed\n";
     }
 }
-
 
 QByteArray reg(QString log, QString pass, QString mail)
 {
@@ -64,15 +62,12 @@ QByteArray reg(QString log, QString pass, QString mail)
     }
 }
 
-
 QByteArray stat(QString log)
 {
     return "stat\n";
 }
 
-
 QByteArray check(QString task, QString var, QString ans)
 {
     return "check\n";
 }
-
