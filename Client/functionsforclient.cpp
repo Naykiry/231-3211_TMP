@@ -23,7 +23,7 @@ void FunctionsForClient::sendReg(QString log, QString pass, QString email)
 
 void FunctionsForClient::msgHandler(QString msg)
 {
-    if (msg == "auth\r\n" || msg == "reg\r\n")
+    if (msg == "auth\n" || msg == "reg\n")
     {
         delete ui_auth;
         ui_main = new MainWindow;
