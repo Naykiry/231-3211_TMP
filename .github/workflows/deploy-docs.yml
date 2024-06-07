@@ -16,7 +16,7 @@ jobs:
     - name: Set up Doxygen
       run: sudo apt-get install -y doxygen graphviz
 
-    - name: Generate Doxygen documentation
+    - name: Generate Doxygen main
       run: doxygen Doxyfile
 
     - name: Deploy to GitHub Pages
