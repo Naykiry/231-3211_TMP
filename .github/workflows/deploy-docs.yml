@@ -17,7 +17,7 @@ jobs:
       run: sudo apt-get install -y doxygen graphviz
 
     - name: Generate Doxygen main
-      run: doxygen Doxyfile
+      run: doxygen .github/workflows/Doxyfile
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
