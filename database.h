@@ -91,7 +91,7 @@ public:
      * @param query Список строк, представляющих запрос.
      * @return Список строк с результатами запроса.
      */
-    QStringList queryToDatabase(QStringList query);
+    QStringList queryToDatabase(QStringList);
 };
 
 #endif
