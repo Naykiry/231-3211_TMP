@@ -7,6 +7,8 @@
 #include <QByteArray>
 #include <QDebug>
 
+class Singltoneforclient;
+
 /**
  * @class SingltoneforclientDestroyer
  * @brief Класс для уничтожения единственного экземпляра Singltoneforclient.
@@ -64,6 +66,7 @@ protected:
     Singltoneforclient& operator=(Singltoneforclient&) = delete;
 
     friend class SingltoneforclientDestroyer;
+
 
 public:
     /**
