@@ -72,7 +72,7 @@ protected:
      */
     Singltoneforclient& operator=(Singltoneforclient&) = delete;
 
-    friend class SingltoneforclientDestroyer;
+    friend class ClientDestroyer;
 
 public:
     /**
