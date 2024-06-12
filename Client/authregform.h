@@ -4,6 +4,10 @@
 #include <QWidget>
 //#include "functionsforclient.h"
 
+namespace Ui {
+class AuthRegForm;
+}
+
 /**
  * @brief Класс формы авторизации и регистрации.
  *
